@@ -43,7 +43,7 @@ The AI Waste Classifier is a machine learning-based project designed to automati
    cd ai-waste-classifier
 
 3. Install dependencies:
-   pip install -r requirements.txt
+   make sure to have python in vs code or other.
 
 ## Usage
 
@@ -83,7 +83,7 @@ This project is licensed under the MIT License.
 
 ## Author
 
-Your Name
+Vraj patel
 
 ## Acknowledgements
 
