@@ -1,91 +1,91 @@
-# vraj-patel-15-AI-based-Waste-Classification-System
+# ♻️ AI Waste Classifier
+An AI-powered web application that classifies waste materials into categories like plastic, paper, glass, etc., and provides recycling guidance. Built using TensorFlow and Streamlit, this project promotes smart waste segregation and environmental awareness.
 
-# AI Waste Classifier
+## 🚀 Features
+* 📷 Upload an image of waste
+* 🤖 AI-based classification using deep learning
+* 🧠 Model trained on 6 categories:
+  * Cardboard
+  * Glass
+  * Metal
+  * Paper
+  * Plastic
+  * Trash
+* 📊 Displays:
+  * Predicted class
+  * Confidence score
+  * Probability breakdown (bar chart)
+* ♻️ Provides recycling category (Recyclable / Non-Recyclable)
+* 💡 Shows helpful recycling tips
 
-## Overview
+## 🖥️ Tech Stack
+* Frontend/UI: Streamlit
+* Backend/Model: TensorFlow / Keras
+* Model Architecture: MobileNetV2 (Transfer Learning)
+* Libraries:
+  * NumPy
+  * PIL (Python Imaging Library)
+  * Matplotlib / Seaborn (for visualization)
+  * Scikit-learn (evaluation metrics)
 
-The AI Waste Classifier is a machine learning-based project designed to automatically identify and classify different types of waste materials. The goal is to assist in efficient waste segregation, promoting recycling and environmental sustainability.
+## 📂 Project Structure
+├── app.py                 # Streamlit UI<br>
+├── model.keras            # Trained model<br>
+├── dataset/               # Dataset directory<br>
+├── training_script.ipynb  # Model training code<br>
+└── README.md              # Project documentation<br>
 
-## Features
+## ⚙️ How It Works
+1. User uploads an image via the Streamlit UI
+2. Image is preprocessed (resized to 224x224, normalized)
+3. Model predicts probabilities for each class
+4. Highest probability class is selected
+5. Recycling category and tip are displayed
 
-* Classifies waste into categories such as:
+## 🧠 Model Details
+* Base Model: MobileNetV2 (pre-trained on ImageNet)
+* Input Size: 224 × 224 × 3
+* Output Layer: Dense (6 units, Softmax)
+* Training Setup:
+  * Loss: Categorical Crossentropy
+  * Optimizer: Adam
+  * Epochs: 10
+  * Validation Split: 20%
 
-  * Organic
-  * Recyclable
-  * Hazardous
-* Uses image-based input for classification
-* Fast and automated predictions
-* Easy-to-use interface (CLI/Web/App depending on your implementation)
+## 📊 Model Evaluation
+* Accuracy and loss tracked during training
+* Classification Report (Precision, Recall, F1-score)
+* Confusion Matrix visualization
+* F1-score comparison across categories
 
-## Technologies Used
+## 📦 Installation & Setup
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/waste-classifier.gitcd waste-classifie
+   ```
+2. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Run the app**:
+   ```bash
+   streamlit run app.py
+   ```
 
-* Python
-* Machine Learning / Deep Learning (e.g., TensorFlow / PyTorch)
-* OpenCV (for image processing)
-* NumPy, Pandas
-* (Optional) Flask / Streamlit for deployment
+## 📸 Usage
+1. Open the web app in your browser
+2. Upload an image (jpg/png)
+3. View:
+   * Predicted material
+   * Confidence score
+   * Recycling suggestion
+   * Probability chart
 
-## Project Structure
+## 📌 Dataset
+* Based on TrashNet dataset (resized version)
+* Organized into 6 folders (one per class)
 
-* dataset/            -> Contains training and testing data
-* models/             -> Saved trained models
-* src/                -> Source code files
-* main.py             -> Main execution script
-* requirements.txt    -> Project dependencies
-* README.txt          -> Project documentation
-
-## Installation
-
-1. Clone the repository:
-   git clone <your-repository-link>
-
-2. Navigate to the project directory:
-   cd ai-waste-classifier
-
-3. Install dependencies:
-   make sure to have python in vs code or other.
-
-## Usage
-
-1. Run the main script:
-   python main.py
-
-2. Provide an input image of waste.
-
-3. The model will output the predicted waste category.
-
-## Model Training
-
-* Prepare dataset with labeled waste images.
-* Train the model using your preferred framework.
-* Save the trained model in the 'models/' directory.
-
-## Applications
-
-* Smart waste management systems
-* Recycling plants
-* Educational tools for environmental awareness
-
-## Future Improvements
-
-* Add more waste categories
-* Improve model accuracy
-* Deploy as a mobile application
-* Integrate real-time camera detection
-
-## Contributing
-
-Contributions are welcome. Feel free to fork the repository and submit pull requests.
-
-## License
-
-This project is licensed under the MIT License.
-
-## Author
-
-Vraj patel
-
-## Acknowledgements
-
-* Open-source libraries and datasets
-* Community contributions in AI and sustainability
+## 🙌 Acknowledgements
+* TensorFlow & Keras for deep learning framework
+* Streamlit for easy UI deployment
+* TrashNet dataset for training data
