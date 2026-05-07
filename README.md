@@ -29,11 +29,11 @@ An AI-powered web application that classifies waste materials into categories li
   * Scikit-learn (evaluation metrics)
 
 ## 📂 Project Structure
-├── app.py                 # Streamlit UI<br>
-├── model.keras            # Trained model<br>
-├── dataset/               # Dataset directory<br>
-├── training_script.ipynb  # Model training code<br>
-└── README.md              # Project documentation<br>
+├── app.py                 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Streamlit UI<br>
+├── model.keras            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;Trained model<br>
+├── dataset/               &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;Dataset directory<br>
+├── training_script.ipynb  &emsp;&emsp;&emsp;&ensp;Model training code<br>
+└── README.md              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;Project documentation<br>
 
 ## ⚙️ How It Works
 1. User uploads an image via the Streamlit UI
@@ -61,7 +61,7 @@ An AI-powered web application that classifies waste materials into categories li
 ## 📦 Installation & Setup
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/waste-classifier.gitcd waste-classifie
+   git clone https://github.com/vraj-patel-15/AI-based-Waste-Classification-System.git
    ```
 2. **Install dependencies**:
    ```bash
